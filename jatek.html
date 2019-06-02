@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Stopper</title>
+</head>
+
+<body class="bgi">
+    <header>
+        <a href="index.html"><img class="logo" src="logo.png" alt="Logo helye"></a>
+    </header>
+
+    <main>
+        <div class="title_main"><b>Tippelős kitalálós játék</b></div>
+        <div class="text_main">A program egy véletlen számot generál 0 és 100 között.
+            <br>Tippelés után segítség.
+        </div>
+        <form name="myForm" id="f1">
+            A generált szám: <input type="text" name="gensz" size="15" readonly value="0 és 100 közötti"><br>
+            A tipp: <input type="number" id="tippsz" min="0" max="100" step="1"><br>
+            Infó:<br>
+            <textarea readonly name="leiras" cols="33" rows="3" resize="none"></textarea>
+        </form>
+        <div>
+            <a class="button" id="btn1">Tippelek</a>
+            <a class="button" id="btn2">Reset</a>
+        </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            Fejlesztés: Ilyés Ádám 2018-<span id="year"></span>
+        </p>
+    </footer>
+    <script src="jatek.js"></script>
+</body>
+
+</html>
